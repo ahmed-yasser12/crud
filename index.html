@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+
+<div class="w-75 mx-auto mt-4 p-2">
+  <label for="productName" class="mb-2">productName:</label>
+  <input type="text" required class="w-100 form-control mb-3 " name="productName" id="productName">
+
+  <label for="productPrice" class="mb-2">productPrice:</label>
+  <input type="number" required class="w-100 form-control mb-3 " name="productPrice" id="productPrice">
+
+
+  <label for="productCategory" class="mb-2">productCategory:</label>
+  <input type="text" required class="w-100 form-control mb-3 " name="productCategory" id="productCategory">
+
+
+
+  <label for="productdesc" class="mb-2">productdesc:</label>
+  <input type="text" required class="w-100 form-control mb-3 " name="productdesc" id="productdesc">
+
+  <button onclick="addProduct()" id="mainBtn" class="btn btn-primary ">Add Product</button>
+
+</div>
+
+  <input onkeyup="searchProduct(this.value)" type="text" name="searchProduct" class="w-50 form-control mx-auto mt-3" placeholder="Search....." id="searchProduct">
+
+<div class="mt-5 w-75 mx-auto">
+<table class="table text-center">
+  <thead>
+    <th>index</th>
+    <th>productName</th>
+    <th>productPrice</th>
+    <th>productCategory</th>
+    <th>productdesc</th>
+    <th>update</th>
+    <th>Delete</th>
+  </thead>
+
+  <tbody id="tableRow">
+    
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
